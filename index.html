@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>APK Downloads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 24px;
+    }
+    .apk-button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      background: #ff5722;
+      color: #fff;
+    }
+    .apk-button:hover {
+      opacity: 0.9;
+    }
+    .note {
+      font-size: 12px;
+      opacity: 0.7;
+      margin-top: 24px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>APK Downloads</h1>
+    <p>Select an app below to download and install it.</p>
+
+    <!-- Buttons for your 4 APKs. 
+         IMPORTANT: these links expect files with these exact names
+         in an "apks" folder: app1.apk, app2.apk, app3.apk, app4.apk
+    -->
+
+    <a class="apk-button" href="apks/app1.apk" download>Download App 1</a>
+    <a class="apk-button" href="apks/app2.apk" download>Download App 2</a>
+    <a class="apk-button" href="apks/app3.apk" download>Download App 3</a>
+    <a class="apk-button" href="apks/app4.apk" download>Download App 4</a>
+
+    <div class="note">
+      Tip: In Downloader, type this page link in the browser bar, open it,
+      then click any button. Android will ask you to confirm the install.
+    </div>
+  </div>
+</body>
+</html>
