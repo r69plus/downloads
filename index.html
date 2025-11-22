@@ -24,15 +24,15 @@
     }
     p {
       font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 24px;
+      opacity: 0.85;
+      margin-bottom: 20px;
     }
     .apk-button {
       display: block;
       width: 100%;
       max-width: 400px;
       margin: 10px auto;
-      padding: 16px;
+      padding: 14px 16px;
       border-radius: 8px;
       border: none;
       text-decoration: none;
@@ -46,9 +46,23 @@
     }
     .note {
       font-size: 12px;
-      opacity: 0.7;
-      margin-top: 24px;
+      opacity: 0.75;
+      margin-top: 18px;
       line-height: 1.5;
+    }
+    .disclaimer-box {
+      margin-top: 28px;
+      padding: 14px 16px;
+      border-radius: 8px;
+      background: #1d1d1d;
+      text-align: left;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    .disclaimer-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -57,19 +71,40 @@
     <h1>APK Downloads</h1>
     <p>Select an app below to download and install it.</p>
 
-    <!-- Buttons for your 4 APKs. 
+    <!-- Buttons for your 4 APKs.
          IMPORTANT: these links expect files with these exact names
-         in an "apks" folder: app1.apk, app2.apk, app3.apk, app4.apk
+         in the ROOT folder: app1.apk, app2.apk, app3.apk, app4.apk
+         You can rename the text between the tags to your app names.
     -->
 
-    <a class="apk-button" href="apks/app1.apk" download>Download App 1</a>
-    <a class="apk-button" href="apks/app2.apk" download>Download App 2</a>
-    <a class="apk-button" href="apks/app3.apk" download>Download App 3</a>
-    <a class="apk-button" href="apks/app4.apk" download>Download App 4</a>
+    <a class="apk-button" href="app1.apk" download>Download App 1</a>
+    <a class="apk-button" href="app2.apk" download>Download App 2</a>
+    <a class="apk-button" href="app3.apk" download>Download App 3</a>
+    <a class="apk-button" href="app4.apk" download>Download App 4</a>
 
     <div class="note">
-      Tip: In Downloader, type this page link in the browser bar, open it,
-      then click any button. Android will ask you to confirm the install.
+      Tip: In Downloader, enter this page link in the browser bar, open it,
+      then click any button. Android may ask you to allow installs from
+      unknown sources and then confirm the install.
+    </div>
+
+    <div class="disclaimer-box">
+      <div class="disclaimer-title">Disclaimer</div>
+      <div>
+        These applications are provided as-is for personal use only. We do not
+        host, stream, or distribute any copyrighted content. The apps
+        themselves do not contain any media, playlists, channels, movies, TV
+        shows, or copyrighted files.
+        <br /><br />
+        Any content that users choose to access through these apps is entirely
+        their own responsibility. Users are solely responsible for ensuring
+        that any streams, links, playlists, or services they add comply with
+        all applicable local laws, copyright regulations, and terms of use.
+        <br /><br />
+        We do not endorse, facilitate, promote, or encourage access to
+        copyrighted content. By downloading or using these applications, you
+        agree that you are responsible for your own actions and usage.
+      </div>
     </div>
   </div>
 </body>
